@@ -13,14 +13,14 @@ const TodoList = (props) => {
     return (
         <ListGroup>
             {
-                filterTodos.map(todo=>
+                filterTodos.map(todo=> (
                     <TodoItem
-                        todo = {todo}
+                        todo={todo}
                         key={todo.id}
                         mark={markDone}
                         remove={deleteTodo}
                     />
-                )
+                ))
             }
         </ListGroup>
     )

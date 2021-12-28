@@ -3,16 +3,16 @@ import {ADD_TODO, FILTER_TODO, MARK_DONE, REMOVE_TODO} from "../actions/types";
 const init = {
     todos: [
         {
-            'title': "Testas1",
-            'description': "Labai gera uzduotis",
-            'isComplete': false,
-            'id': 1234567
+            title: "Testas1",
+            description: "Labai gera uzduotis",
+            isComplete: false,
+            id: 1234567
         },
         {
-            'title': "Testas2",
-            'description': "Labai gera uzduotis2",
-            'isComplete': true,
-            'id': 1234569
+            title: "Testas2",
+            description: "Labai gera uzduotis2",
+            isComplete: true,
+            id: 1234569
         }
     ],
     filter: 'ALL'
@@ -59,7 +59,7 @@ const Todos = (state = init, action) => {
                 todos
             }
         }
-        default: return state
+        default: return state;
     }
 }
 

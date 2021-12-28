@@ -1,5 +1,5 @@
 const filterTodo = (todos, status) => {
-    switch (status){
+    switch (status) {
         case 'ACTIVE':
             return todos.filter(todo=>todo.isComplete === false)
         
